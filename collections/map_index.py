@@ -1,3 +1,26 @@
+# map - A list of lists, applies a function to each item in an iterable (list,tuple, etc) and returns a list of the results.
+
+# Example 1
+store = [1,2,3,4,5]
+def add_one(x):
+    return x + 1
+new_store = list(map(add_one, store))
+print(new_store)
+
+# Example 2
+store [("shirt",20.00),
+       ("pants",30.00),
+       ("shoes",50.00)]
+
+to_euros = lambda data: (data[0], data[1] * 0.82) # Converts the price to euros
+
+
+
+
+
+
+
+
 # Solving problem with map & indexing
 line1 = ["⬜️","️⬜️","️⬜️"]
 line2 = ["⬜️","⬜️","️⬜️"]

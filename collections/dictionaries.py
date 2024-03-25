@@ -10,7 +10,11 @@ capitals = {
 # capitals.pop() - removes the last item in the dictionary or the item with the key specified
 # capitals.clear() - removes all the items in the dictionary
 # capitals.update() - updates the dictionary with the specified key-value pairs
+
+# Adds a new key pair to the dictionary
 capitals.update({"Nigeria": "Abuja", "Ghana": "Accra"}) # Adding items to the dictionary
+# Updates an existing key pair in the dictionary
+capitals.update({"Nigeria": "Lagos"})
 
 
 
