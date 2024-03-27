@@ -9,6 +9,8 @@ print(student[0])
 print(student.count("John"))
 print(student.index(21))
 
+
+
 # Sorted tuple
 students = ("John", "Jane", "Doe", "Doe")
 sorted_students = sorted(students, reverse = True) # reverse = True will sort in descending order

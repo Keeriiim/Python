@@ -22,10 +22,6 @@ capitals.update({"Nigeria": "Lagos"})
 
 
 
-
-
-
-
 programming_dictionary = {
     "Bug":
     "An error in a program that prevents the program from running as expected.",
@@ -117,3 +113,39 @@ travel_log2 = [
 
 print("\n")
 print(travel_log2)
+
+
+# Dictionary comprehensions - A way to create a new dictionary by performing an operation on each item in an existing dictionary
+
+# Example 1 - dictionary = {new_key: expression for (key,value) in iterable if conditional}
+dictionary ={'englad':'london',
+             'spain':'barcelona',
+             'germany':'berlin'}
+print(dictionary.get('cities'))
+
+dict_new = {key : value for (key,value) in dictionary.items() if value[0] == "b"}
+print(dict_new)
+
+# Example 2 - dictionary = {new_key: expression for (key,value) in iterable}
+cities_in_F = {'New York':32,'Boston':75,'Los Angeles':100,'Chicago':50}
+cities_in_C = {key: round((value-32)*(5/9)) for (key,value) in cities_in_F.items()}
+print(cities_in_C)
+
+# Example 3 - dictionary = {new_key: (if/else) for (key,value) in iterable}
+dict_new2 = {key : (value if value[0] == "b" else "-") for (key,value) in dictionary.items()}
+print(dict_new2)
+
+# Example 4 - dictionary = {new_key: function() for (key,value) in iterable}
+def check(value):
+    if value >= 75:
+        return 'HOT'
+    elif value >= 69:
+        return 'WARM'
+    else:
+        return 'COLD'
+
+dict_new_3 = {key: check(value) for (key,value) in cities_in_F.items()}
+print(dict_new_3)
+
+
+
